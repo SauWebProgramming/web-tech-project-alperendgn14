@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "title": "Inception",
+    "category": "Bilim Kurgu",
+    "year": 2010,
+    "rating": 8.8,
+    "image": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_FMjpg_UX1000_.jpg",
+    "description": "Çok yetenekli bir hırsız olan Dom Cobb'un uzmanlık alanı, zihnin en savunmasız olduğu rüya anında, bilinçaltının derinliklerindeki değerli sırları çekip çıkarmaktır."
+  },
+  {
+    "id": 2,
+    "title": "The Dark Knight",
+    "category": "Aksiyon",
+    "year": 2008,
+    "rating": 9.0,
+    "image": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+    "description": "Batman, Teğmen Gordon ve Savcı Harvey Dent ile işbirliği yaparak Gotham Sokaklarını sarmış olan suç örgütlerini temizlemeye girişir."
+  },
+  {
+    "id": 3,
+    "title": "Interstellar",
+    "category": "Bilim Kurgu",
+    "year": 2014,
+    "rating": 8.6,
+    "image": "https://play-lh.googleusercontent.com/MFtl_llKoQcwejT0O-OYcm0sAEXqzi0rScghSCUCPXlV7hQct7CCtlZ9bH2LNOk1l-MiscRaAIYynBOTVTM",
+    "description": "Bir grup kaşifin, insanlığın hayatta kalmasını sağlamak için yeni bir yaşanabilir gezegen arayışıyla solucan deliğinden geçmesini konu alır."
+  },
+  {
+    "id": 4,
+    "title": "Ford v Ferrari",
+    "category": "Dram",
+    "year": 2019,
+    "rating": 8.1,
+    "image": "https://m.media-amazon.com/images/S/pv-target-images/b7a51fcdee29dcb53bc11170b510e85ae808176477d01a00795ad7288d69f5ac.jpg",
+    "description": "Amerikalı araba tasarımcısı Carroll Shelby ve sürücü Ken Miles'ın, 1966 Le Mans yarışında Ferrari'yi yenmek için Ford adına devrim niteliğinde bir yarış arabası inşa etme hikayesi."
+  },
+  {
+    "id": 5,
+    "title": "The Grand Budapest Hotel",
+    "category": "Komedi",
+    "year": 2014,
+    "rating": 8.1,
+    "image": "https://image.tmdb.org/t/p/w500/eWdyYQreja6JGCzqHWXpWHDrrPo.jpg",
+    "description": "İki savaş arasındaki dönemde ünlü bir Avrupa otelinde kapıcı olarak çalışan Gustave H ile lobi görevlisi Mustafa'nın arkadaşlık hikayesi."
+  },
+  {
+    "id": 6,
+    "title": "The Matrix",
+    "category": "Bilim Kurgu",
+    "year": "1999",
+    "rating": 8.7,
+    "image": "https://filmpravda.com/wp-content/uploads/2018/07/the-matrix.jpg?w=426&h=639",
+    "description": "Gündüzleri sıradan bir bilgisayar programcısı olan Thomas Anderson (Neo), sürekli hissettiği bir garipliğin peşinden gider. Nihayetinde, yaşadığı dünyanın aslında insanları köleleştiren makineler tarafından yaratılmış devasa bir bilgisayar simülasyonu (Matrix) olduğunu keşfeder."
+    },
+    {
+      "id": 7,
+      "title": "Gran Turismo",
+      "category": "Spor", 
+      "year": "2023",
+      "rating": 7.2,
+      "image": "https://i1.wp.com/www.streetmachine.com.au/wp-content/uploads/2023/11/gran-turismo-movie-poster-scaled.jpg?ssl=1",
+      "description": "Video oyunu tutkusunu gerçek yarış pistine taşıyan genç Jann Mardenborough'nun inanılmaz gerçek hikayesi. Nissan'ın GT Academy programı aracılığıyla profesyonel bir yarış pilotu olma hayalinin peşinden koşuyor."
+    }
+]

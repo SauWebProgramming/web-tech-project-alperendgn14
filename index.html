@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İnteraktif Medya Kitaplığı</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">MediaLib</div>
+            <ul class="nav-links">
+                <li><a href="#" id="nav-home" class="active">Ana Sayfa</a></li>
+                <li><a href="#" id="nav-favorites">Favorilerim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="controls">
+        <input type="text" id="search-input" placeholder="Film veya dizi ara...">
+        <select id="category-select">
+            <option value="all">Tüm Kategoriler</option>
+            <option value="Bilim Kurgu">Bilim Kurgu</option>
+            <option value="Aksiyon">Aksiyon</option>
+            <option value="Dram">Dram</option>
+            <option value="Suç">Suç</option>
+            <option value="Komedi">Komedi</option>
+        </select>
+    </section>
+
+    <main>
+        <div id="media-container" class="grid-container">
+            </div>
+
+        <div id="detail-modal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <div id="modal-body">
+                    </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Web Teknolojileri Proje Ödevi</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
