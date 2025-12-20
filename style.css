@@ -119,15 +119,20 @@ body::after {
    Navbar/header
    ========================================= */
 header {
-    background-color: rgba(15, 23, 42, 0.7); 
-    /* Arkadakileri buzlu cam gibi bulanıklaştırdım */
-    backdrop-filter: blur(10px); 
-    -webkit-backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    /* Cam Efekti */
+    background: rgba(15, 23, 42, 0.6); /* daha şeffaf  */
+    backdrop-filter: blur(16px); /* daha bulanık */
+    -webkit-backdrop-filter: blur(16px);
+    
+    /* Altına ince bir çizgi ve gölge */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    
     padding: 1rem 2rem;
     position: sticky;
     top: 0;
     z-index: 1000;
+    transition: all 0.3s ease;
 }
 
 .navbar {
@@ -139,45 +144,60 @@ header {
 }
 
 .logo {
-    font-size: 1.8rem;
-    font-weight: 700;
-    background: linear-gradient(to right, #38bdf8, #818cf8);
+    font-size: 2rem; 
+    font-weight: 800; 
+    letter-spacing: 1px; 
+    
+    /* Modern Gradyan Renk */
+    background: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    
+    /* Neon Parlama Efekti */
+    filter: drop-shadow(0 0 10px rgba(0, 210, 255, 0.5));
+    
     cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.05); /* Üzerine gelince hafif büyüsün */
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 15px; /* Butonlar arası boşluk */
+    align-items: center;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: #cbd5e1;
+    color: #e2e8f0;
     font-weight: 500;
-    transition: all 0.3s;
+    font-size: 0.95rem;
+    padding: 10px 20px; 
+    border-radius: 50px; /* Kenarları yuvarlatılmış (Pill shape) */
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
+    overflow: hidden;
+    border: 1px solid transparent; 
 }
 
-.nav-links a:hover, .nav-links a.active {
-    color: #38bdf8;
+.nav-links a:hover {
+    background: rgba(255, 255, 255, 0.1); /* Hafif beyaz zemin */
+    color: #38bdf8; /* Mavi yazı */
+    border-color: rgba(56, 189, 248, 0.3); /* Çerçeve belirsin */
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.2); /* Arkada mavi ışık */
+    transform: translateY(-2px);
 }
 
-/* Hover çizgisi */
-.nav-links a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -5px;
-    left: 0;
-    background-color: #38bdf8;
-    transition: width 0.3s;
-}
-.nav-links a:hover::after {
-    width: 100%;
+.nav-links a.active {
+    background: linear-gradient(90deg, #38bdf8, #818cf8);
+    color: white;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+    border: none;
 }
 
 /* =========================================
@@ -376,6 +396,7 @@ header {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     background: linear-gradient(to right, #fff, #94a3b8);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', init);
 
 async function init() {
     await fetchData();
+    fillCategories();
     renderMedia(allMedia);
 }
 
@@ -158,3 +159,23 @@ navFavorites.addEventListener('click', (e) => {
     const favs = getFavorites();
     renderMedia(favs);
 });
+
+
+// Kategorileri Otomatik Doldurma Fonksiyonu
+function fillCategories() {
+    const select = document.getElementById('category-select');
+    
+    //Tüm medyalardan sadece kategori isimlerini al
+    const categories = allMedia.map(item => item.category);
+    
+    // Tekrarlayanları temizle
+    const uniqueCategories = [...new Set(categories)];
+
+    //Her kategori için bir option oluştur
+    uniqueCategories.forEach(category => {
+        const option = document.createElement('option');
+        option.value = category;
+        option.textContent = category;
+        select.appendChild(option);
+    });
+}
